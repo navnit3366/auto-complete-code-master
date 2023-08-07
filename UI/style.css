@@ -1,0 +1,97 @@
+QWidget {
+    background-color: #1A2B33;
+}
+
+QPlainTextEdit  {
+  color: white;
+  border: none;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+QPushButton {
+  background-color: rgb(30, 203, 122);
+   border-style: solid;
+   border-radius:25px;
+   max-width:50px;
+   max-height:50px;
+   min-width:50px;
+   min-height:50px;
+   font-size: 20px;
+   color: white;
+   vertical-align: middle;
+  font-weight: 500;
+}
+
+QListWidget
+{
+    background-color: #1A2B33;
+    border:none;
+    padding:5px;
+    font-size:13px;
+    color:rgba(255,255,255,.5);
+    border-radius: 3px;
+    outline: 0;
+}
+QListWidget::item
+{
+    padding: 5px 0px;
+}
+
+QListWidget::item:selected
+{
+    background-color: #27414E;
+    color:#fff;
+    outline: none;
+    border-radius: 3px;
+}
+
+QListWidget::item:focus {
+  border: none;
+}
+QLabel
+{
+    color:#fff
+}
+
+/*
+  Scroll bar design
+ */
+QScrollBar:vertical {
+    border: none;
+    background: #1A2B33;
+    width: 12px;
+    margin: 0;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(255,255,255, 0.1);
+    min-height: 26px;
+    border-radius: 100%;
+}
+
+QScrollBar::add-line:vertical {
+    background: none;
+    height: 26px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    background: none;
+    height: 26px;
+    subcontrol-position: top left;
+    subcontrol-origin: margin;
+    position: absolute;
+}
+
+QScrollBar:up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    width: 26px;
+    height: 26px;
+    background: none;
+    image: url('./glass.png');
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
